@@ -1,66 +1,165 @@
 <!DOCTYPE html>
-<!--
-	Eventually by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
   <head>
-    <title>Eventually by HTML5 UP</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-35893834-2"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-35893834-2');
+		</script> -->
+
+    <title>REIA</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
+
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"
+      integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
-  <body class="is-preload">
-    <!-- Header -->
-    <header id="header">
-      <h1>REIA</h1>
-      <p>
-        Reia is building a suite of women’s health products by updating lesser
-        known <br />yet widely used devices to suit the needs of the modern
-        woman.
-      </p>
+
+  <body>
+    <header id="home" class="header">
+      <div class="heading-box">
+        <h2 class="heading">
+          <span class="heading-main">REIA</span>
+          <span class="sub-heading"
+            >Reia is building a suite of women’s health products by updating
+            lesser known yet widely used devices to suit the needs of the modern
+            woman.</span
+          >
+        </h2>
+
+        <ul class="nav-box">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Mission</a>
+          </li>
+          <li class="nav-item">|</li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </header>
 
-    <!-- Signup Form -->
-    <form id="signup-form" method="post" action="#">
-      <input type="email" name="email" id="email" placeholder="Email Address" />
-      <input type="submit" value="SAY HELLO" />
-    </form>
+    <main>
+      <section id="about" class="section">
+        <div>
+          <div class="section-heading">
+            <h2>Mission</h2>
+          </div>
 
-    <!-- Footer -->
-    <footer id="footer">
-      <ul class="icons">
-        <li>
-          <a href="#" class="icon fa-twitter"
-            ><span class="label">Twitter</span></a
-          >
-        </li>
-        <li>
-          <a href="#" class="icon fa-instagram"
-            ><span class="label">Instagram</span></a
-          >
-        </li>
-        <li>
-          <a href="#" class="icon fa-github"
-            ><span class="label">GitHub</span></a
-          >
-        </li>
-        <li>
-          <a href="#" class="icon fa-envelope-o"
-            ><span class="label">Email</span></a
-          >
-        </li>
-      </ul>
-      <ul class="copyright">
-        <li>Reia</li>
-      </ul>
-    </footer>
+          <div>
+            <p>
+              Reia is a team of three female engineers and a urogynecologist
+              working to redesign non-surgical POP treatment options.
+              Collectively, they are dissatisfied with the current treatment
+              options for POP and are passionate about improving the lives of
+              women affected by it.
+            </p>
+          </div>
+        </div>
+      </section>
 
-    <!-- Scripts -->
-    <script src="assets/js/main.js"></script>
+      <section id="contact" class="section-alt">
+        <div>
+          <div class="section-heading">
+            <h2>Contact</h2>
+            <!-- <hr> -->
+          </div>
+
+          <div class="contact-content">
+            <form
+              method="POST"
+              action="#"
+              id="contactform"
+              class="contact-form"
+            >
+              <div class="fields">
+                <div class="field">
+                  <input type="text" name="name" id="name" placeholder="Name" />
+                </div>
+
+                <div class="field">
+                  <input
+                    type="email"
+                    name="_replyto"
+                    id="email"
+                    placeholder="Email"
+                  />
+                </div>
+
+                <div class="field">
+                  <textarea
+                    name="message"
+                    id="message"
+                    rows="4"
+                    placeholder="Message"
+                  ></textarea>
+                </div>
+
+                <div id="hidden-fields">
+                  <input
+                    type="hidden"
+                    name="_next"
+                    value="http://reiahealth.com"
+                  />
+                  <input
+                    type="hidden"
+                    name="_subject"
+                    value="Submission from website contact form"
+                  />
+                  <input type="text" name="_gotcha" style="display:none" />
+                </div>
+              </div>
+
+              <input class="btn" type="submit" value="Send Message" />
+            </form>
+          </div>
+
+          <script>
+            const contactform = document.getElementById('contactform');
+            contactform.setAttribute(
+              'action',
+              'https://formspree.io/' +
+                'kaitlin' +
+                '@' +
+                'reiahealth' +
+                '.' +
+                'com'
+            );
+          </script>
+        </div>
+      </section>
+
+      <section class="footer section-alt">
+        <div class="links">
+          <a href="https://www.instagram.com/reiahealth" target="_blank"
+            ><i class="fab fa-instagram fa-3x"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/kaitlin-maier/" target="_blank"
+            ><i class="fab fa-linkedin fa-3x"></i
+          ></a>
+        </div>
+      </section>
+    </main>
   </body>
+
+  <footer class="footer section-alt">
+    <span><i class="far fa-copyright"></i> 2019</span>
+  </footer>
 </html>
