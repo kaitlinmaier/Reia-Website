@@ -257,7 +257,8 @@ textarea {
   }
 
   .nav-box {
-    font-weight: 300;
+    font-weight: 200;
+    font-size: 1em;
   }
 
   .heading-main {
@@ -265,7 +266,7 @@ textarea {
     font-size: 2em;
   }
 
-  .heading-sub {
+  .sub-heading {
     font-size: 1em;
   }
 
