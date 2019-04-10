@@ -14,8 +14,9 @@ body {
   /* font-size: 16px; */
   line-height: 1.7;
   color: #777;
-  background-image: linear-gradient(to right bottom, #372fced0, #a647f4d0),
-    url(../../images/bg.jpg);
+  background-image: linear-gradient(to right bottom, #372fced0, #a647f4d0);
+  /* background-image: linear-gradient(to right bottom, #372fced0, #a647f4d0),
+    url(../../images/bg.jpg); */
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
@@ -57,15 +58,15 @@ p {
   display: block;
   font-size: 4.1rem;
   font-weight: 300;
-  letter-spacing: 2rem;
+  /* letter-spacing: 2rem; */
   animation: moveInLeft 1s ease-out;
 }
 
-.heading-sub {
+.sub-heading {
   display: block;
   font-size: 2rem;
   font-weight: 400;
-  letter-spacing: 1.4rem;
+  /* letter-spacing: 1.4rem; */
   animation: moveInRight 1s ease-out;
 }
 
