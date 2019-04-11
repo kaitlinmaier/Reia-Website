@@ -262,7 +262,7 @@ textarea {
   }
 
   .heading-main {
-    letter-spacing: 1.5rem;
+    /* letter-spacing: 1.5rem; */
     font-size: 2em;
   }
 
