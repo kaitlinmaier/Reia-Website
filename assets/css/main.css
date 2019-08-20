@@ -269,6 +269,11 @@ textarea {
     flex-direction: column;
   }
 
+  .nav-box {
+    /* font-weight: 200; */
+    font-size: 1.5em;
+  }
+
   .project-item {
     flex-direction: column;
   }
@@ -288,8 +293,8 @@ textarea {
   }
 
   .nav-box {
-    font-weight: 200;
-    font-size: 2em;
+    /* font-weight: 200; */
+    font-size: 1.5em;
   }
 
   .heading-main {
