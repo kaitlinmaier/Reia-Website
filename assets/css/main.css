@@ -9,12 +9,14 @@ html {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  /* font-family: 'Lato', sans-serif; */
+  font-family: myFirstFont;
   font-weight: 400;
   /* font-size: 16px; */
   line-height: 1.7;
-  color: #777;
-  background-image: linear-gradient(to right bottom, #372fced0, #a647f4d0);
+  color: #202020;
+  /* background-image: url(../../images/Circles_wide-blue-1.png); */
+  /* background-image: linear-gradient(to right bottom, #372fced0, #a647f4d0); */
   /* background-image: linear-gradient(to right bottom, #372fced0, #a647f4d0),
     url(../../images/bg.jpg); */
   background-size: cover;
@@ -24,7 +26,7 @@ body {
 }
 
 h2 {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 300;
   font-size: 2rem;
   line-height: 2;
@@ -34,9 +36,15 @@ p {
   margin-bottom: 1.5rem;
 }
 
+img {
+  max-width: 50%;
+  height: auto;
+}
+
 .header {
   height: 100vh;
   position: relative;
+  background-image: url(../../images/Circles_wide-blue-1.png);
 }
 
 .heading-box {
@@ -48,8 +56,9 @@ p {
 }
 
 .heading {
+  /* color: #e4eaef; */
   color: #fff;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   margin-bottom: 6rem;
   backface-visibility: hidden;
 }
@@ -92,7 +101,7 @@ p {
 }
 
 .nav-link:hover {
-  color: rgb(255, 214, 221);
+  columns: #73b9ff;
 }
 
 .section {
@@ -102,7 +111,7 @@ p {
 }
 
 .section h2 {
-  color: darkgreen;
+  color: #202020;
 }
 
 .section-alt {
@@ -111,14 +120,17 @@ p {
       to right bottom,
       #696969d0,
       #252525d0); */
-  background-color: #252525b9;
+  background-color: #b4d7ff;
+  /* background-image: url(../../images/Circles_wide-blue-1.png); */
+
   padding: 5rem 10% 5rem 10%;
   font-size: 1.6rem;
-  color: #fff;
+  color: #777;
 }
 
 .section-heading {
   margin-bottom: 3rem;
+  text-transform: uppercase;
 }
 
 .icons {
@@ -126,11 +138,11 @@ p {
 }
 
 .icons a {
-  color: #777;
+  color: #e4eaef;
 }
 
 .icons a:hover {
-  color: rgb(255, 214, 221);
+  color: #73b9ff;
 }
 
 .contact-content {
@@ -164,15 +176,15 @@ textarea {
 .btn {
   width: 15rem;
   height: 4rem;
-  color: rgba(255, 255, 255, 0.76);
-  background-color: rgba(156, 156, 156, 0.521);
+  color: #202020;
+  background-color: #e4eaef;
   border: none;
 }
 
 .btn:hover {
   cursor: pointer;
-  color: #777;
-  background-color: rgb(255, 214, 221);
+  color: #e4eaef;
+  background-color: #73b9ff;
 }
 
 .links {
@@ -185,7 +197,7 @@ textarea {
 }
 
 .links a:hover {
-  color: rgb(255, 214, 221);
+  color: #73b9ff;
 }
 
 .footer {
@@ -193,6 +205,11 @@ textarea {
   text-align: center;
   font-size: 1.4rem;
   color: rgba(156, 156, 156, 0.521);
+}
+
+@font-face {
+  font-family: 'myFirstFont';
+  src: url('/fonts/circular-book.woff') format('woff');
 }
 
 /* ANIMATIONS */
