@@ -76,18 +76,20 @@ img {
   font-size: 3rem;
   font-weight: 400;
   /* letter-spacing: 1.4rem; */
+
   animation: moveInRight 1s ease-out;
 }
 
 .nav-box {
   list-style-type: none;
   /* text-transform: uppercase; */
-  font-family: boldFont;
-  font-size: 3rem;
+  /* font-family: boldFont; */
+  font-size: 2.5rem;
   /* font-weight: 100; */
   color: #fff;
   animation: moveInBottom 1s ease-out;
   animation-fill-mode: backwards;
+  margin-top: 6rem;
 }
 
 .nav-item {
@@ -102,7 +104,8 @@ img {
 }
 
 .nav-link:hover {
-  columns: #73b9ff;
+  /* columns: #73b9ff; */
+  color: #b4d7ff;
 }
 
 .section {
