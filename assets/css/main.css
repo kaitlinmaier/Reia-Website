@@ -37,7 +37,7 @@ p {
 }
 
 img {
-  max-width: 50%;
+  max-width: 80%;
   height: auto;
 }
 
@@ -73,7 +73,7 @@ img {
 
 .sub-heading {
   display: block;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 400;
   /* letter-spacing: 1.4rem; */
   animation: moveInRight 1s ease-out;
@@ -81,9 +81,10 @@ img {
 
 .nav-box {
   list-style-type: none;
-  text-transform: uppercase;
-  font-size: 2rem;
-  font-weight: 100;
+  /* text-transform: uppercase; */
+  font-family: boldFont;
+  font-size: 3rem;
+  /* font-weight: 100; */
   color: #fff;
   animation: moveInBottom 1s ease-out;
   animation-fill-mode: backwards;
@@ -112,6 +113,7 @@ img {
 
 .section h2 {
   color: #202020;
+  font-family: boldFont;
 }
 
 .section-alt {
@@ -120,17 +122,20 @@ img {
       to right bottom,
       #696969d0,
       #252525d0); */
-  background-color: #b4d7ff;
+  /* background-color: #b4d7ff; */
+  background-color: #73b9ff;
   /* background-image: url(../../images/Circles_wide-blue-1.png); */
 
   padding: 5rem 10% 5rem 10%;
   font-size: 1.6rem;
-  color: #777;
+  color: #202020;
 }
 
 .section-heading {
   margin-bottom: 3rem;
-  text-transform: uppercase;
+  font-family: boldFont;
+
+  /* text-transform: uppercase; */
 }
 
 .icons {
@@ -157,16 +162,17 @@ img {
 
 input,
 textarea {
-  font-family: 'Lato', sans-serif;
+  font-family: 'myFirstFont';
   font-weight: 400;
   font-size: 1.6rem;
   width: 100%;
   height: 3.4rem;
   border-radius: 0.5rem;
-  color: #777;
+  color: #202020;
   background-color: rgba(255, 255, 255, 0.76);
   margin: 1rem 0;
   padding: 1rem;
+  border: none;
 }
 
 textarea {
@@ -183,8 +189,8 @@ textarea {
 
 .btn:hover {
   cursor: pointer;
-  color: #e4eaef;
-  background-color: #73b9ff;
+  /* color: #e4eaef; */
+  background-color: #b4d7ff;
 }
 
 .links {
@@ -193,23 +199,28 @@ textarea {
 }
 
 .links a {
-  color: rgba(156, 156, 156, 0.521);
+  color: #fff;
 }
 
 .links a:hover {
-  color: #73b9ff;
+  color: #b4d7ff;
 }
 
 .footer {
   padding: 2rem 0;
   text-align: center;
   font-size: 1.4rem;
-  color: rgba(156, 156, 156, 0.521);
+  color: #fff;
 }
 
 @font-face {
   font-family: 'myFirstFont';
   src: url('/fonts/circular-book.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'boldFont';
+  src: url('/fonts/circular-black.woff') format('woff');
 }
 
 /* ANIMATIONS */
