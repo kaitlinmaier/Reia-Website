@@ -290,6 +290,10 @@ textarea {
   .contact-form {
     width: 80%;
   }
+  .btn {
+    width: 100%;
+    display: block;
+  }
 }
 
 @media screen and (max-width: 375px) {
