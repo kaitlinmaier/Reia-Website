@@ -41,6 +41,12 @@ img {
   height: auto;
 }
 
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 .header {
   height: 100vh;
   position: relative;
@@ -300,9 +306,9 @@ textarea {
 
   .nav-box {
     /* font-weight: 200; */
-    visibility: hidden;
+    /* visibility: hidden; */
 
-    /* font-size: 1.5em; */
+    font-size: 1.5em;
   }
 
   .sub-heading {
@@ -326,6 +332,18 @@ textarea {
     height: 3em;
     display: block;
   } */
+}
+
+@media screen and (max-width: 650px) {
+  .nav-box {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .nav-box {
+    visibility: hidden;
+  }
 }
 
 @media screen and (max-width: 375px) {
