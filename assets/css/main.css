@@ -134,6 +134,21 @@ img {
   color: #202020;
 }
 
+.section-alt2 {
+  /* background-image:
+    linear-gradient(
+      to right bottom,
+      #696969d0,
+      #252525d0); */
+  /* background-color: #b4d7ff; */
+  background-color: #b4d7ff;
+  /* background-image: url(../../images/Circles_wide-blue-1.png); */
+
+  padding: 5rem 10% 5rem 10%;
+  font-size: 1.6rem;
+  color: #202020;
+}
+
 .section-heading {
   margin-bottom: 3rem;
   font-family: boldFont;
@@ -190,10 +205,24 @@ textarea {
   border: none;
 }
 
+.btn2 {
+  width: 15rem;
+  height: 4rem;
+  color: #202020;
+  background-color: #e4eaef;
+  border: none;
+}
+
 .btn:hover {
   cursor: pointer;
   /* color: #e4eaef; */
   background-color: #b4d7ff;
+}
+
+.btn2:hover {
+  cursor: pointer;
+  /* color: #e4eaef; */
+  background-color: #73b9ff;
 }
 
 .links {
